@@ -21,7 +21,7 @@
       <div class="boxDetailTop">
 				<div class="cont"><img src="./images/content/imgDetail.png" alt=""></div>
 				<div class="btnArea">
-					<a href="#" class="btnZoom open--popup" data-pop="popDetail">확대</a>
+					<a href="#" class="btnZoom popup--open" data-pop="popDetail">확대</a>
 				</div>
       </div>
 			<div class="section section--detail">
@@ -66,7 +66,7 @@
 					</div>
 					
 					<div class="btnArea">
-						<a href="#">예약구매하기</a>
+						<a href="#" class="popup--open" data-pop="popSettle">예약구매하기</a>
 					</div>
 				</div>
 				<div class="inBox">
@@ -197,6 +197,50 @@
 		</footer>
 	</section>
 
+	<div id="popSettle" class="popBasic">
+		<div class="popContainer">
+			<div class="inner">
+				<div class="topArea">
+					<h2>결제하기</h2>
+					<p>구매하시는 상품과 금액을 확인하시고,<br />결제하시기 바랍니다.</p>
+				</div>
+				<div class="boxBasic">
+					<ul>
+						<li>구매상품 : 예약구매상품명</li>
+						<li>구매수량 : 1</li>
+						<li>결제금액 : 3,000 klay</li>
+						<li class="imp">아래의 클립 지갑 주소로 입금해주시기 바랍니다.</li>
+					</ul>
+				</div>
+				
+				<h6>입금 클립 지갑 주소</h6>
+				<div class="boxBasic type--key">
+					<div class="key">0x4da93e3c3efc2a879fb047e5195f239ffb19a9e5</div>
+					<a href="#" class="keyLink">key</a>
+				</div>
+				<div class="txt_imp">
+					입금기한 내에 입금이 되지 않으면 자동 취소됩니다.<br />
+					입금기한 : 2022.03.23  / 15:45 (구매 후 24시간 내)
+				</div>
+				
+				<div class="btnArea">
+					<a href="#" class="btn is--white cancel popup--close">취소</a>
+					<a href="#" class="btn is--black submit">결제하기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 상품 상세 -->
+	<div id="popDetail" class="popBasic">
+		<div class="popContainer">
+			<div class="inner">
+				<div class="boxImgDetail"><img src="./images/content/imgDetail.png" alt="" /></div>
+				<button type="button" class="popClose popup--close">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- //상품 상세 -->
 </body>
 <script type="text/javascript">
 	$(function(){

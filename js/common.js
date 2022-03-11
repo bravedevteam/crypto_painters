@@ -42,4 +42,19 @@ $(function(){
       }
     }
   });
+
+  //팝업
+  $(".popup--open").click(function(e){
+    e.preventDefault();
+    var target = $(this).attr("data-pop");
+
+    $("html, body").css("overflow", "hidden");
+    $("#"+target).fadeIn(300);
+  });
+
+  $(".popup--close").click(function(e){
+    e.preventDefault();
+    $("html, body").css("overflow", "auto");
+    $(this).parents(".popBasic").fadeOut(300);
+  });
 });
