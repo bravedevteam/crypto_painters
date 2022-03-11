@@ -345,3 +345,5 @@ body.bg--white { background:#fff; }
 .popBasic .btnArea .cancel { width:96px; }
 .popBasic .btnArea .submit { flex:1; }
 .popBasic .popClose { width:16px; height:16px; position:absolute; right:16px; top:28px; background:url('../images/common/popClose.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+
+.popBasic.type--detail .inner { padding:0; }
